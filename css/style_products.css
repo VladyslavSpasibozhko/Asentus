@@ -1,0 +1,300 @@
+.background_image_01 {
+  background: url('../img/1920x1080/02.jpg');
+}
+.background_image_02 {
+  background: url('../img/1920x1080/01.jpg');
+}
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+#header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Hind;
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+  transition: 2s;
+  padding-bottom: 100px;
+}
+#header .page_scroll {
+  background-color: #fff;
+}
+#header .main_menu {
+  position: fixed;
+  height: 100px;
+  border-bottom: 1px solid #a6a7aa;
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#header .main_menu li:hover::before {
+  right: 95%;
+  top: 45%;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border: 1px solid #11a1ef;
+}
+#header .main_menu li {
+  position: relative;
+  list-style: none;
+}
+#header .main_menu li .page_scroll_a {
+  color: #545454;
+}
+#header .main_menu li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+#header .header_title .main_title {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 200px;
+}
+#header .header_title .sub_title {
+  color: #a6a7aa;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#latest_products {
+  padding-top: 100px;
+}
+#latest_products #title h1 {
+  font-family: Hind;
+  color: #515769;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+#latest_products #description p {
+  font-family: Hind;
+  color: #a6a7aa;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+#latest_products #latest_products_item {
+  padding-bottom: 30px;
+  display: flex;
+}
+#latest_products #latest_products_item #item_image {
+  height: 260px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#latest_products #latest_products_item #item_image img {
+  z-index: 0;
+  width: 350px;
+  position: relative;
+}
+#latest_products #latest_products_item #item_title {
+  padding-bottom: 20px;
+  display: flex;
+  font-family: Hind;
+}
+#latest_products #latest_products_item #item_title a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #515769;
+  font-weight: 900;
+}
+#latest_products #latest_products_item #item_title a:hover {
+  color: #a6a7aa;
+}
+#latest_products #latest_products_item #item_title p {
+  margin-top: 8px;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #bfc1c7;
+}
+#latest_products #latest_products_item #item_description {
+  padding-bottom: 20px;
+}
+#latest_products #latest_products_item #item_description p {
+  color: #a6a7aa;
+  font-size: 15px;
+  font-weight: 400;
+}
+#latest_products #latest_products_item #item #more_details {
+  padding-bottom: 20px;
+}
+#latest_products #latest_products_item #item #more_details a {
+  text-decoration: none;
+  font-family: Hind;
+  color: #81848f;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
+#latest_products #latest_products_item #item #more_details a:hover {
+  color: #a6a7aa;
+}
+#latest_products #latest_products_item #item #more_details a:before {
+  content: '';
+  background-color: #11a1ef;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+}
+#clients_block {
+  background-color: #fafafa;
+}
+#clients_block_content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#info_for_clients_content {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+#info_for_clients_content_main {
+  font-family: Hind;
+}
+#info_for_clients_content_main h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #515769;
+  margin-bottom: 15px;
+}
+#info_for_clients_content_main p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #a6a7aa;
+}
+#info_for_clients_content_image {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+#info_for_clients_content_image img {
+  width: 100%;
+}
+#footer {
+  background: url(../img/1920x1080/03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Hind;
+  position: relative;
+}
+#footer_content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer_content #footer_menu ul {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+#footer_content #footer_menu ul li {
+  margin-bottom: 15px;
+}
+#footer_content #footer_menu ul li a {
+  color: #cbd3e1;
+  text-decoration: none;
+}
+#footer_content #footer_menu ul li a:hover {
+  color: #fff;
+}
+#footer_content #footer_links ul {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+#footer_content #footer_links ul li {
+  margin-bottom: 15px;
+}
+#footer_content #footer_links ul li a {
+  color: #cbd3e1;
+  text-decoration: none;
+}
+#footer_content #footer_links ul li a:hover {
+  color: #fff;
+}
+#footer_content #message_form form {
+  display: flex;
+  flex-direction: column;
+}
+#footer_content #message_form form h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#footer_content #message_form form input {
+  margin-bottom: 15px;
+  width: 85%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 15px 15px;
+  outline: none;
+}
+#footer_content #message_form form input::-webkit-input-placeholder {
+  color: #a6a7aa;
+  font-size: 14px;
+  font-weight: 400;
+}
+#footer_content #message_form form textarea {
+  outline: none;
+  width: 85%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 15px 15px;
+}
+#footer_content #message_form form textarea::-webkit-input-placeholder {
+  color: #a6a7aa;
+  font-size: 14px;
+  font-weight: 400;
+}
+#footer_content #message_form form button {
+  background: #17bed2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 0px;
+  border: none;
+  width: 110px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+#footer #footer_end {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #9e9a9a59;
+}
+#footer #footer_end > div {
+  display: flex;
+  justify-content: space-between;
+}
+#footer #footer_end_author p {
+  font-family: Hind;
+  font-weight: 700;
+  color: #17bed2;
+}
+#footer #footer_end_author p a {
+  color: #a6a7aa;
+  text-decoration: none;
+}

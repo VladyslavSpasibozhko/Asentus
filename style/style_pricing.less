@@ -1,0 +1,369 @@
+@font: Hind;
+@color-title: #515769;
+@color-subtitle: #a6a7aa;
+@footer-color-left: #cbd3e1;
+
+.background_image_01 {
+	background: url('../img/1920x1080/02.jpg');
+}
+.background_image_02 {
+	background: url('../img/1920x1080/01.jpg');
+}
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+} 
+#header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: @font;
+	font-size: 13px;
+	color: #fff;
+	position: relative;
+	z-index: 5;
+	transition: 2s;
+	padding-bottom: 100px;
+	.page_scroll {
+		background-color: #fff;
+	}
+	.main_menu {
+		position: fixed;
+		height: 100px;
+		border-bottom: 1px solid #a6a7aa;
+		width: 100%;
+		transition: 0.5s;
+		overflow: hidden;
+
+		li:hover::before {
+			right: 95%;
+		    top: 45%;
+		    content: '';
+		    position: absolute;
+		    width: 10px;
+		    height: 2px;
+		    border: 1px solid #11a1ef;
+			}
+		li {
+			position: relative;
+			list-style: none;
+			.page_scroll_a {
+				color: #545454;
+			}
+			a {	
+				color: #fff;
+				font-weight: 600;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: 0.5s;
+			}
+		}
+	}
+	#pricing_header_title {
+		.main_title {
+			color: #fff;
+			font-size: 80px;
+			font-weight: 700;
+			padding-top: 200px;
+		}
+		.sub_title {
+			color: #a6a7aa;
+			font-size: 15px;
+		}
+	}
+}
+#prices_block {
+	background-color: #fafafa;
+	&_content {
+		margin-top: 80px;
+		margin-bottom: 80px;
+		display: flex;
+		justify-content: center;
+		&_item:first-child {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			}
+		&_item:last-child {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		&_item:nth-child(2) {
+			padding-top: 120px;
+		}
+		&_item {
+			background-color: #fff;
+			border: 1px solid #eaeaea4f;
+			padding: 80px 60px;
+			&_head {
+				margin-bottom: 20px;
+				img {
+					width: 50px;
+				}
+			}
+			&_title {
+				margin-bottom: 20px;
+
+				h2 {
+					font-size: 22px;
+					font-weight: 700;
+					color: @color-title;
+					font-family: @font;
+					span {
+						color: @color-subtitle;
+						font-size: 15px;
+					}
+				}
+			}
+			&_subtitle {
+				margin-bottom: 20px;
+
+				p {
+					font-size: 15px;
+					font-weight: 400;
+					color: @color-subtitle;
+					font-family: @font;
+				}
+			}
+			&_advantages {
+				margin-bottom: 20px;
+				li {
+					margin-bottom: 10px;
+					list-style: none;
+					position: relative;
+					font-size: 13px;
+					font-weight: 400;
+					color: #81848f;
+					font-family: @font;
+				}
+				li:before {
+					content: '';
+					position: absolute;
+					background-color: #17bed2;
+					width: 10px;
+					height: 2px;
+					top: 8px;
+					left: -18px;
+
+				}
+
+			}
+			&_button {
+				margin-top: 10px;
+				font-size: 13px;
+			    font-weight: 600;
+			    padding: 15px 30px;
+			    color: @color-title;
+    			background: #f3f4f5;
+    			text-transform: uppercase;
+    			border-radius: 0px;
+			}
+		}
+	}
+}
+#customers_review {
+	&_content {
+		h2 {
+			font-family: @font;
+			font-size: 30px;
+			color: @color-title;
+			font-weight: 700;
+			margin-bottom: 20px;
+			margin-top: 100px;
+		}
+		.all_review_block {
+			display: flex;
+			margin-left: 100px;
+			position: relative;
+			.review_block_outside {
+				margin-left: 40px;
+				.review {
+					p {
+						font-family: @font;
+						font-size: 17px;
+						color: @color-subtitle;
+						font-weight: 400;
+						margin-bottom: 20px;
+					}
+					span {
+						color: @color-title;
+						font-weight: 700;
+						font-size: 14px;
+					}
+				}
+			}
+			#next {
+				position: absolute;
+				outline: none;
+				border: none;
+				right: 0px;
+				height: 100%;
+				background-color: #fff;
+				top: 0px;
+				right: 120px;
+				img {
+					height: 25%;
+					width: 100%;
+				}
+			}
+			#prev {
+				outline: none;
+				border: none;
+				position: absolute;
+				left: 0px;
+				height: 100%;
+				background-color: #fff;
+				top: 0px;
+				left: -120px;
+				img {
+					height: 25%;
+					width: 100%;
+				}
+			}
+		}
+		.review:before {
+			content: "``";
+		    position: absolute;
+		    left: 0px;
+		    top: -30px;
+		    color: #17bed2;
+		    font-size: 82px;
+		    letter-spacing: -10px;
+		    transform: rotateY(45deg);
+		}
+		.no-display {
+			display: none;
+		}
+		.display {
+			display: block;
+			animation-name: reviewAnimation;
+			animation-duration: 1s;
+		}
+	}
+}
+#clients_block {
+	background-color: #fafafa;
+	&_content {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+#footer {
+	background: url(../img/1920x1080/03.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: @font;
+	position: relative;
+	&_content {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		display: flex;
+		justify-content: space-between;
+		#footer_menu {
+			ul {
+				list-style: none;
+				font-size: 17px;
+				font-weight: 500;
+				li {
+					margin-bottom: 15px;
+					a {
+						color: @footer-color-left;
+						text-decoration: none;
+					}
+					a:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+		#footer_links {
+			#footer_menu
+		}
+		#message_form {
+			form {
+				display: flex;
+				flex-direction: column;
+				h1 {
+					color: #fff;
+					font-size: 30px;
+					font-weight: 700;
+					margin-bottom: 15px;
+				}
+				input {
+					margin-bottom: 15px;
+					width: 85%;
+					border: none;
+					background-color: rgba(0,0,0,.15);
+					color: #fff;
+					padding: 15px 15px; 
+					outline: none;
+				}
+				input::-webkit-input-placeholder {
+					color: #a6a7aa;
+					font-size: 14px;
+					font-weight: 400;
+				}
+				textarea {
+					outline: none;
+					width: 85%;
+					border: none;
+					background-color: rgba(0,0,0,.15);
+					color: #fff;
+					padding: 15px 15px; 
+				}
+				textarea::-webkit-input-placeholder {
+					color: #a6a7aa;
+					font-size: 14px;
+					font-weight: 400;
+				}
+				button {
+					background: #17bed2;
+    				color: #fff;
+    				font-weight:600;
+    				font-size: 13px;
+    				padding: 15px;
+    				border-radius: 0px;
+    				border: none;
+    				width: 110px;
+    				text-transform: uppercase;
+    				margin-top: 30px;
+				}
+			}
+		}
+	}
+	#footer_end {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-top: 1px solid #9e9a9a59;
+		& > div {
+			display: flex;
+			justify-content: space-between;
+		}
+		&_image {
+			
+		}
+		&_author {
+			p {
+				font-family: @font;
+				font-weight: 700;
+				color: #17bed2;
+				a {
+					color: #a6a7aa;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+@keyframes reviewAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
